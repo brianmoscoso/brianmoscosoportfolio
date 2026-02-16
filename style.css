@@ -135,3 +135,60 @@ footer {
   color: #0a192f;
   border-color: #0a192f;
 }
+
+/* NAVBAR */
+/* NAVBAR BASE */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 15px 40px;
+  transition: all 0.3s ease;
+
+  background: rgba(10, 10, 10, 0.75);   /* always visible */
+  backdrop-filter: blur(10px);          /* modern glass effect */
+}
+/* TEXT COLOR */
+.navbar a,
+.navbar .logo {
+  color: #ffffff !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar .nav-link.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+/* HOVER EFFECT */
+.navbar a:hover {
+  color: #00f7ff !important;
+}
+
+/* SCROLL EFFECT */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  padding: 12px 40px;
+}
+
+/* HERO GLOW */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(100,255,218,0.15), transparent);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
