@@ -1,0 +1,137 @@
+:root {
+  --dark: #0a192f;
+  --dark-alt: #020c1b;
+  --accent: #64ffda;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--dark);
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a192f, #020c1b);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+/* SECTION */
+section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.bg-dark-alt {
+  background: var(--dark-alt);
+}
+
+/* GLASS CARD */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.glass:hover {
+  transform: translateY(-8px);
+}
+
+/* SKILLS */
+.skill {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(100,255,218,0.1);
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background: var(--accent);
+  color: black;
+}
+
+/* BUTTON */
+.btn-custom {
+  background: var(--accent);
+  color: black;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: 600;
+}
+
+/* SCROLL ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BACK TO TOP */
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background: var(--accent);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020c1b;
+}
+
+.btn-resume {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-resume:hover {
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.btn-resume {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.bg-dark-alt .btn-resume,
+.hero .btn-resume {
+  color: var(--accent);
+}
+
+.bg-light .btn-resume {
+  color: #0a192f;
+  border-color: #0a192f;
+}
